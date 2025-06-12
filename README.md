@@ -1,6 +1,6 @@
 # 📘 DSA – Data Structures and Algorithms
 
-Welcome to the **DSA Repository** – a curated collection of essential **Data Structures and Algorithms** implemented in [Your Preferred Language, e.g., C++/Java/Python]. This repository is intended for **learning, practice, and interview preparation**.
+Welcome to the **DSA Repository** – a curated collection of essential **Data Structures and Algorithms** implemented in Python. This repository is intended for **learning, practice, and interview preparation**.
 
 ---
 
