@@ -3,13 +3,25 @@ class Solution {
         if(num==1){
             return true;
         }
-        int mid=num/2;
-        for(int i=0;i<=mid;i++){
-            if(i*i==num){
+        long start=1;
+        long end=num;
+        while(start<=end){
+            long mid=start+(end-start)/2;
+            long square=mid*mid;
+            if(square==num){
                 return true;
             }
+            else if(num<square){
+                end=mid-1;
+            }
+            else{
+                start=mid+1;
+            }
+
         }
         return false;
+        
+        
         
     }
 }
