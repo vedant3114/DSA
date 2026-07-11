@@ -12,12 +12,12 @@ class Solution {
                 nums[j]=temp;
                 i++;
             }
-            if(nums[i]%2==0 && nums[j]%2!=0){
+            if(nums[i]%2==0 && nums[j]%2!=0 || nums[i]%2==0 && nums[j]%2==0){
                 i++;
             }
-            if(nums[i]%2==0 && nums[j]%2==0){
-                i++;
-            }
+            // if(nums[i]%2==0 && nums[j]%2==0){
+            //     i++;
+            // }
             j++;
         }
         return nums;
