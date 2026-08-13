@@ -2,7 +2,7 @@ class Solution {
     public int countWords(String[] words1, String[] words2) {
         HashMap<String,Integer>map1=new HashMap<>();
         HashMap<String,Integer>map2=new HashMap<>();
-        ArrayList<String>list=new ArrayList<>();
+        int count=0;
         for(String i:words1){
             map1.put(i,map1.getOrDefault(i,0)+1);
         }
@@ -11,9 +11,9 @@ class Solution {
         }
         for(String i:words2){
             if(map1.containsKey(i) && map1.get(i)==1 && map2.get(i)==1){
-                list.add(i);
+                count++;
             }
         }
-        return list.size();
+        return count;
     }
 }
